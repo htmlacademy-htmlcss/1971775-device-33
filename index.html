@@ -14,15 +14,11 @@
             <a><img src="" alt="DEVICE"></a>
           </div>
         <nav class="navigation">
-         <ul class="main-navigation-user-list">
-            <li class="main-navigation-user-item  main-nav-user-item-search">  
           <form action="main-navigation-search">
             <input type="search" placeholder="Текст поиска" name="search" id="search">
             <button class="main-navigation-search-button" type="submit">Найти</button>
           </div>
           </form>
-            </li>
-         </ul>
         </nav>
           <nav class="navigation">
             <ul class="navigation-list navigation-user">
@@ -56,11 +52,13 @@
 <div class="container">
     <main class="main-index">
         <h2 class="visually-hidden">Промо-слайдер</h2>
-        <div class="adaptivSlayder">
-            <input type="radio" name="promo-control-1" id="slaid1" checked>
-            <input type="radio" name="promo-control-2" id="slaid1">
-            <input type="radio" name="promo-control-2" id="slaid1">
-            <div class="promo-slider__item  promo-slider__item--1">
+        <img class="slider-image" src="" alt="Слайды" >
+        <button class="slider-button slider-prev" type="radio">
+          <span class="visually-hidden">Предыдущий слайдер</span>
+        </button>
+        <button class="slider-button slider-next" type="radio">
+          <span class="visually-hidden">Следующий слайдер</span>
+        </button>
                 <div class="promo-slider-img-wrap  promo-slider-img-wrap-1">
                   <img src="" alt="Квадрокоптер">
                 </div>
@@ -70,16 +68,16 @@
            <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
            </p>
            <a class="button" href="#">Подробнее</a>
-           <table>
-               <tr>
-                   <td>800 м</td>
-                   <td>50 м</td>
-               </tr>
-               <tr>
-                <td>Дальность полета</td>
-                <td>Радиус положения</td>
-            </tr>
-           </table>
+           <ul class="numbers-about-advantages-item">
+               <li class="advantages-numbers-item">
+                   <b class="advantages-numbers-title">800 м</b>
+                   Дальность полета
+               </li>
+               <li class="advantages-numbers-item"></li>
+                   <b class="advantages-numbers-title">50 м</b> 
+                   Радиус положения
+                </li>
+            </ul>
            <div class="promo-slider-controls">
                <label class="promo-slider-control" for="promo-slider-1">
                    <span class="visually-hidden">первый слайд</span>
@@ -150,35 +148,38 @@
 <section class="services">
     <div class="container">
         <h2 class="visually-hidden">Сервис</h2>
-        <input class="services-slider  visually-hidden" id="services-control-1" type="radio" name="services-control" checked>
-        <input class="services-slider  visually-hidden" id="services-control-2" type="radio" name="services-control">
-        <input class="services-slider  visually-hidden" id="services-control-2" type="radio" name="services-control">
+        <ol class="slider-navigation">
+            <li class="slider-navigation-item">
+              <button class="slider-navigation-button slider-navigation-button-delivery" type="button" checked>
+                <span class="slider-navigation-name">Доставка</span>
+              </button>
+            </li>
+            <li class="slider-navigation-item">
+                <button class="slider-navigation-button slider-navigation-button-warranty" type="button">
+                  <span class="slider-navigation-name">Гарантия</span>
+                </button>
+              </li>
+              <li class="slider-navigation-item">
+                <button class="slider-navigation-button slider-navigation-button-current" type="button">
+                  <span class="slider-navigation-name">Кредит</span>
+                </button>
+              </li>
+        </ol>
     </div>
     <div class="services-delivery-active-slider">
-        <h3>Доставка</h3>
-        <p>Мы с удовольствием доставим ваш товар прямо
+        <h3 class="delivery-active-slider">Доставка</h3>
+        <p class="slogan-delivery-text">Мы с удовольствием доставим ваш товар прямо
             к вашему подъезду совершенно бесплатно! Ведь
             мы неплохо заработаем, поднимая его на ваш этаж.</p>
     </div>
-    <div class="services-slider-warranty">
-        <h3>Гарантия</h3>
-    </div>
-    <div class="services-slider-credit">
-        <h3>Кредит</h3>
-    </div>
-    <div class="services-slider-controls">
-        <label class="services-slider-control-active" for="services-control-1">Доставка</label>
-        <label class="services-slider-control" for="services-control-2">Гарантия</label>
-        <label class="services-slider-control" for="services-control-3">Кредит</label> 
-    </div>
-  </div>
 </section>
+
 <div class="container delivery">
     <div class="slogan-delivery">
         <h3 class="slogan-delivery-text">Доставим редкий товар под заказ</h3>
     </div>
     <li class="main-goods-item">
-        <a class="main-delivery-item-link" href="#">
+        <a class="main-delivery-item-link">
           <div class="main-delivery-item">
             <img class="main-delivery-item-img" src="" alt="Грузовик">
           </div>
@@ -222,15 +223,11 @@
           <p>Еженедельный дайджест с обзорами новинок,
             длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
             <nav class="user-email">
-              <ul class="main-user-email">
-                 <li class="main-user-email-item  main-user-item-search-email">  
                <form action="main-email-search">
                  <input type="search" placeholder="Ваш e-mail" name="search" id="search">
                  <button class="main-email-search-button" type="submit">Подписаться</button>
                </div>
                </form>
-                 </li>
-              </ul>
              </nav>
         </section>
   </main>
@@ -255,10 +252,6 @@
     <div class="page-footer-phone">
       <a class="contacts-phone" href="tel:88005558628">+7(812) 812-12-12</a> 
     </div>
-    <div class="page-footer-links">
-      <div class="page-footer-links-wrap"></div>
-    </div>
-    <div class="page-footer-links">
       <div class="page-footer-links-wrap">
         <ul class="page-footer-ocial-list">
           <li class="page-footer-social-item">
