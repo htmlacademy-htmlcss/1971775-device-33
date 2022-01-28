@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Девайс</title>
   </head>
-  
+
   <body>
-    <div class="container">
         <header class="page-header">
+          <div class="container">
           <h1 class="visually-hidden">Интернет-магазин гаджетов "DEVICE"</h1>
           <div class="page-header-logo">
             <a><img src="" alt="DEVICE"></a>
@@ -17,10 +17,10 @@
           <form action="main-navigation-search">
             <input type="search" placeholder="Текст поиска" name="search" id="search">
             <button class="main-navigation-search-button" type="submit">Найти</button>
-          </div>
           </form>
         </nav>
-          <nav class="navigation">
+          
+        <nav class="navigation">
             <ul class="navigation-list navigation-user">
                 <li class="navigation-item">
                     <a class="navigation-link" href="#">Войти</a>
@@ -47,49 +47,54 @@
                 </li>
               </ul> 
           </nav>
+        </div>
       </header>
-    </div>
-<div class="container">
-    <main class="main-index">
+
+
+    <main class="main-iner">
+      <div class="container">
         <h2 class="visually-hidden">Промо-слайдер</h2>
-        <img class="slider-image" src="" alt="Слайды" >
-        <button class="slider-button slider-prev" type="radio">
+        <button class="slider-button slider-prev" type="button">
           <span class="visually-hidden">Предыдущий слайдер</span>
         </button>
-        <button class="slider-button slider-next" type="radio">
+        <button class="slider-button slider-next" type="button">
           <span class="visually-hidden">Следующий слайдер</span>
         </button>
                 <div class="promo-slider-img-wrap  promo-slider-img-wrap-1">
                   <img src="" alt="Квадрокоптер">
                 </div>
-         </div>
          <div class="promo-content">
            <h2 class="promo-heading">Порхает как бабочка, <br> жалит как пчела!</h2>
            <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
            </p>
-           <a class="button" href="#">Подробнее</a>
-           <ul class="numbers-about-advantages-item">
-               <li class="advantages-numbers-item">
-                   <b class="advantages-numbers-title">800 м</b>
-                   Дальность полета
-               </li>
-               <li class="advantages-numbers-item"></li>
-                   <b class="advantages-numbers-title">50 м</b> 
-                   Радиус положения
-                </li>
+           </div>
+           <section class="characteristic">
+            <h2 class="characteristic-title">Популярные услуги</h2>
+            <ul class="characteristic-list">
+              <li class="characteristic-item">
+                <b class="characteristic-name">800 м</b>
+                <span class="characteristic-price">Дальность палета</span>
+              </li>
+              <li class="characteristic-item">
+                <b class="characteristic-name">50 м</b>
+                <span class="characteristic-price">Радиус положения</span>
+              </li>
             </ul>
-           <div class="promo-slider-controls">
-               <label class="promo-slider-control" for="promo-slider-1">
-                   <span class="visually-hidden">первый слайд</span>
-               </label>
-               <label class="promo-slider-control" for="promo-slider-2">
-                <span class="visually-hidden">второй слайд</span>
-            </label>
-            <label class="promo-slider-control" for="promo-slider-3">
-                <span class="visually-hidden">третий слайд</span>
-            </label>
-         </div>
-    </main>
+           </section> 
+            <section class="gallery">
+              <h2 class="visually-hidden">Слайды</h2>
+              <button class="slider-button slider-1-active" type="button">
+                <span class="visually-hidden">Первый слайд</span>
+              </button>
+              <button class="slider-button slider-2" type="button">
+                <span class="visually-hidden">Второй слайд</span>
+              </button>
+              <button class="slider-button slider-3" type="button">
+                <span class="visually-hidden">Третий слайд</span>
+              </button>
+            </section>  
+      </div>
+    
     <section class="main-goods">
         <h2 class="visually-hidden">Популярные товары</h2>
         <ul class="main-goods-list">
@@ -143,14 +148,13 @@
           </li>
         </ul>
       </section>
-    </div>
 
 <section class="services">
     <div class="container">
         <h2 class="visually-hidden">Сервис</h2>
         <ol class="slider-navigation">
             <li class="slider-navigation-item">
-              <button class="slider-navigation-button slider-navigation-button-delivery" type="button" checked>
+              <button class="slider-navigation-button slider-navigation-button-delivery" type="button">
                 <span class="slider-navigation-name">Доставка</span>
               </button>
             </li>
@@ -178,21 +182,17 @@
     <div class="slogan-delivery">
         <h3 class="slogan-delivery-text">Доставим редкий товар под заказ</h3>
     </div>
-    <li class="main-goods-item">
+      <div class="main-delivery-item"></div>
         <a class="main-delivery-item-link">
-          <div class="main-delivery-item">
             <img class="main-delivery-item-img" src="" alt="Грузовик">
-          </div>
         </a>
-</div>
+        </div>
       <section class="main-info-wrap">
         <h2 class="visually-hidden">Информация о "device"</h2>
         <article class="main-info">
          <h3>О нас</h3>
-         <div class="main-info-description">
            <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
            <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
-         </div>
          <ul class="main-info-delivery-list">
           <li class="main-info-delivery-item">Меловые линии</li>
           <li class="main-info-delivery-item">СДИК</li>
@@ -224,58 +224,69 @@
             длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
             <nav class="user-email">
                <form action="main-email-search">
-                 <input type="search" placeholder="Ваш e-mail" name="search" id="search">
+                 <input type="search" placeholder="Ваш e-mail" name="search">
                  <button class="main-email-search-button" type="submit">Подписаться</button>
-               </div>
                </form>
              </nav>
         </section>
   </main>
-<footer class="page-footer">
-  <div class="container">
-    <div class="page-footer-user-panel">
-     <div class="page-footer-logo">
-       <a>
-         <img src="" alt="device">
-       </a>
-     </div>
-    </div>
-    <div class="page-footer-contacts">
-        <address class="contacts-address">
-          <p class="contacts-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
-    </div>
-    <div class="page-footer-menu">
-      <a class="page-footer-menu-delivery" href="#">Доставка</a>
-      <a class="page-footer-menu-guarantee" href="#">Гарантия</a>
-      <a class="page-footer-menu-contacts" href="#">Контакты</a>
-    </div>
-    <div class="page-footer-phone">
-      <a class="contacts-phone" href="tel:88005558628">+7(812) 812-12-12</a> 
-    </div>
-      <div class="page-footer-links-wrap">
-        <ul class="page-footer-ocial-list">
-          <li class="page-footer-social-item">
-            <a class="page-footer-social-link  page-footer-ocial-link-fb" href="https://www.facebook.com/htmlacademy">
-              <span class="visually-hidden">Facebook</span>
-            </a>
-          </li>
-          <li class="page-footer-social-item">
-            <a class="page-footer-social-link  page-footer-social-link-inst" href="https://www.instagram.com/htmlacademy/">
-              <span class="visually-hidden">Instagram</span>
-            </a>
-          </li>
-          <li class="page-footer-social-item">
-            <a class="page-footer-social-link  page-footer-social-link-tw" href="https://twitter.com/htmlacademy_ru">
-              <span class="visually-hidden">Twitter</span>
-            </a>
-          </li>
-        </ul>
-        <div class="page-footer-logo">
-          <a href="https://htmlacademy.ru/" img src="" alt="HTML Academy"></a>
+  <footer class="page-footer">
+    <div class="container">
+      <div class="page-footer-user-panel">
+       <div class="page-footer-logo">
+         <a>
+           <img src="" alt="device">
+         </a>
+       </div>
+      </div>
+      <div class="page-footer-contacts">
+          <address class="contacts-address">
+            <p class="contacts-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+          </address>
+        </div>
+        <div class="page-footer-menu">
+          <h2 class="visually-hidden">Меню футера</h2>
+          <button class="footer-navigation-delivery" type="button">
+            <span class="footer-delivery">Доставка</span>
+          </button>
+          <button class="footer-navigation-warranty" type="button">
+            <span class="footer-warranty">Гарантия</span>
+          </button>
+          <button class="footer-navigation-contact" type="button">
+            <span class="footer-contact">Контакты</span>
+          </button>
+      </div>
+      <div class="page-footer-phone">
+        <a class="contacts-phone" href="tel:88005558628">+7(812) 812-12-12</a> 
+      </div>
+      <div class="page-footer-links">
+        <div class="page-footer-links-wrap"></div>
+      </div>
+      <div class="page-footer-links">
+        <div class="page-footer-links-wrap">
+          <ul class="page-footer-ocial-list">
+            <li class="page-footer-social-item">
+              <a class="page-footer-social-link  page-footer-ocial-link-fb" href="https://www.facebook.com/htmlacademy">
+                <span class="visually-hidden">Facebook</span>
+              </a>
+            </li>
+            <li class="page-footer-social-item">
+              <a class="page-footer-social-link  page-footer-social-link-inst" href="https://www.instagram.com/htmlacademy/">
+                <span class="visually-hidden">Instagram</span>
+              </a>
+            </li>
+            <li class="page-footer-social-item">
+              <a class="page-footer-social-link  page-footer-social-link-tw" href="https://twitter.com/htmlacademy_ru">
+                <span class="visually-hidden">Twitter</span>
+              </a>
+            </li>
+          </ul>
+          <div class="page-footer-logo">
+            <a href="https://htmlacademy.ru/"> <img src="" alt="HTML Academy"></a>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</footer>
-  </body>
+  </footer>
+ </body>
 </html>
