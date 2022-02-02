@@ -4,51 +4,58 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Девайс</title>
+    <link rel="stylesheet" href="style/style.CSS">
   </head>
 
   <body>
-        <header class="page-header">
-          <div class="container">
-          <h1 class="visually-hidden">Интернет-магазин гаджетов "DEVICE"</h1>
-          <div class="page-header-logo">
-            <a><img src="" alt="DEVICE"></a>
-          </div>
-        <nav class="navigation">
-          <form action="main-navigation-search">
-            <input type="search" placeholder="Текст поиска" name="search" id="search">
-            <button class="main-navigation-search-button" type="submit">Найти</button>
-          </form>
-        </nav>
-          
-        <nav class="navigation">
-            <ul class="navigation-list navigation-user">
-                <li class="navigation-item">
-                    <a class="navigation-link" href="#">Войти</a>
-                  </li>
-                  <li class="navigation-item">
-                    <a class="navigation-link" href="#">Сравнить</a>
-                  </li>
-                <li class="navigation-item">
-                    <a class="navigation-link" href="#">Корзина</a>
-                  </li>
-            </ul>
-            <ul class="navigation-list">
-                <li class="navigation-item">
-                    <a class="navigation-link" href="catalog.html">Каталог товаров</a>
-                  </li>
-                <li class="navigation-item">
-                  <a class="navigation-link" href="delivery.html">Доставка</a>
-                </li>
-                <li class="navigation-item">
-                  <a class="navigation-link" href="warranty.html">Гарантия</a>
-                </li>
-                <li class="navigation-item">
-                  <a class="navigation-link" href="contact.html">Контакты</a>
-                </li>
-              </ul> 
-          </nav>
-        </div>
-      </header>
+    <header class="page-header">
+      <div class="container">
+      <h1 class="visually-hidden">Интернет-магазин гаджетов "DEVICE"</h1>
+      <div class="page-header-logo">
+        <a><img class="logo" src="images/папка для картинок девайс/logo.svg" alt="DEVICE" Width="145" Height="36"></a>
+      </div>
+    <nav class="navigation">
+      <form action="main-navigation-search">
+        <input type="search" placeholder="Текст поиска" name="search" id="search">
+        <button class="main-navigation-search-button" type="submit">Найти</button>
+      </form>
+    </nav>
+      
+    <nav class="navigation">
+      <ul class="navigation-list">
+        <li class="navigation-batton">
+          <button class="navigation-link-enter" type="button">
+            <span class="navigation-link-name">Войти</span>
+          </button>
+          </li>
+           <li class="navigation-batton">
+            <button class="navigation-link-compare" type="button">
+              <span class="navigation-link-name">Сравнить</span>
+            </button>
+          </li>
+            <li class="navigation-batton">
+              <button class="navigation-link-card" type="button">
+                <span class="navigation-link-name">Корзина</span>
+              </button>
+          </li>
+      </ul>          
+        <ul class="navigation-list">
+            <li class="navigation-item">
+                <a class="navigation-link" href="catalog.html">Каталог товаров</a>
+              </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="delivery.html">Доставка</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="warranty.html">Гарантия</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="contact.html">Контакты</a>
+            </li>
+          </ul> 
+      </nav>
+    </div>
+  </header>
 
     
     <main class="main-inner">
@@ -234,15 +241,17 @@
           </div>
           <div class="page-footer-menu">
             <h2 class="visually-hidden">Меню футера</h2>
-            <button class="footer-navigation-delivery" type="button">
-              <span class="footer-delivery">Доставка</span>
-            </button>
-            <button class="footer-navigation-warranty" type="button">
-              <span class="footer-warranty">Гарантия</span>
-            </button>
-            <button class="footer-navigation-contact" type="button">
-              <span class="footer-contact">Контакты</span>
-            </button>
+            <ul>
+              <li class="footer-navigation-item">
+                <a class="footer-navigation-link" href="delivery.html">Доставка</a>
+              </li>
+              <li class="footer-navigation-item">
+                <a class="footer-navigation-link" href="warranty.html">Гарантия</a>
+              </li>
+              <li class="footer-navigation-item">
+                <a class="footer-navigation-link" href="contact.html">Контакты</a>
+              </li>
+              </ul>
         </div>
         <div class="page-footer-phone">
           <a class="contacts-phone" href="tel:88005558628">+7(812) 812-12-12</a> 

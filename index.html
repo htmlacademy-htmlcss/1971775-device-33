@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Девайс</title>
+    <link rel="stylesheet" href="style/style.CSS">
   </head>
 
   <body>
@@ -11,7 +12,7 @@
           <div class="container">
           <h1 class="visually-hidden">Интернет-магазин гаджетов "DEVICE"</h1>
           <div class="page-header-logo">
-            <a><img src="" alt="DEVICE"></a>
+            <a><img class="logo" src="images/папка для картинок девайс/logo.svg" alt="DEVICE" Width="145" Height="36"></a>
           </div>
         <nav class="navigation">
           <form action="main-navigation-search">
@@ -21,17 +22,23 @@
         </nav>
           
         <nav class="navigation">
-            <ul class="navigation-list navigation-user">
-                <li class="navigation-item">
-                    <a class="navigation-link" href="#">Войти</a>
-                  </li>
-                  <li class="navigation-item">
-                    <a class="navigation-link" href="#">Сравнить</a>
-                  </li>
-                <li class="navigation-item">
-                    <a class="navigation-link" href="#">Корзина</a>
-                  </li>
-            </ul>
+          <ul class="navigation-list">
+            <li class="navigation-batton">
+              <button class="navigation-button-enter" type="button">
+                <span class="navigation-button-name">Войти</span>
+              </button>
+              </li>
+               <li class="navigation-batton">
+                <button class="navigation-button-compare" type="button">
+                  <span class="navigation-button-name">Сравнить</span>
+                </button>
+              </li>
+                <li class="navigation-batton">
+                  <button class="navigation-button-card" type="button">
+                    <span class="navigation-button-name">Корзина</span>
+                  </button>
+              </li>
+          </ul>      
             <ul class="navigation-list">
                 <li class="navigation-item">
                     <a class="navigation-link" href="catalog.html">Каталог товаров</a>
@@ -61,7 +68,7 @@
           <span class="visually-hidden">Следующий слайдер</span>
         </button>
                 <div class="promo-slider-img-wrap  promo-slider-img-wrap-1">
-                  <img src="" alt="Квадрокоптер">
+                  <img class="slider-image" src="images/папка для картинок девайс/quadrocopter.png" alt="Квадрокоптер">
                 </div>
          <div class="promo-content">
            <h2 class="promo-heading">Порхает как бабочка, <br> жалит как пчела!</h2>
@@ -100,57 +107,57 @@
         <ul class="main-goods-list">
           <li class="main-goods-item">
             <a class="main-goods-item-link" href="#">
-              <div class="main-goods-item-wrap-vr">
-                <img class="main-goods-item-img" src="" alt="Очки VR">
+              <div class="main-goods-item-wrap">
+                <img class="main-goods-item-img" src="images/папка для картинок девайс/vr.svg" alt="Очки VR">
               </div>
-              <p class="main-goods-item-name">Виртуальная реальность</p>
+              <p class="goods-item-name">Виртуальная реальность</p>
             </a>
           </li>
           <li class="main-goods-item">
             <a class="main-goods-item-link" href="catalog.html">
-              <div class="main-goods-item-wrap-selfie">
-                <img class="main-goods-item-img" src="" alt="Монопод">
+              <div class="main-goods-item-wrap">
+                <img class="main-goods-item-img" src="images/папка для картинок девайс/monopod (2).svg" alt="Монопод">
               </div>
-              <p class="main-goods-item-name">Моноподы для селфи</p>
+              <p class="goods-item-name">Моноподы для селфи</p>
             </a>
           </li>
           <li class="main-goods-item">
             <a class="main-goods-item-link" href="#">
-              <div class="main-goods-item-wrap-camera">
-                <img class="main-goods-item-img" src="" alt="Экшн-камера">
+              <div class="main-goods-item-wrap">
+                <img class="main-goods-item-img" src="images/папка для картинок девайс/camera.svg" alt="Экшн-камера">
               </div>
-              <p class="main-goods-item-name">Экшн-камеры</p>
+              <p class="goods-item-name">Экшн-камеры</p>
             </a>
           </li>
           <li class="main-goods-item">
             <a class="main-goods-item-link" href="#">
-              <div class="main-goods__item-wrap-fit">
-                <img class="main-goods-item-img" src="" alt="Фитнес-браслет">
+              <div class="main-goods-item-wrap">
+                <img class="main-goods-item-img" src="images/папка для картинок девайс/fit — копия.svg" alt="Фитнес-браслет">
               </div>
-              <p class="main-goods-item-name">Фитнес-браслеты</p>
+              <p class="goods-item-name">Фитнес-браслеты</p>
             </a>
           </li>
           <li class="main-goods-item">
             <a class="main-goods-item-link" href="#">
-              <div class="main-goods-item-wrap-watch">
-                <img class="main-goods-item-img" src="" alt="Умные часы">
+              <div class="main-goods-item-wrap">
+                <img class="main-goods-item-img" src="images/папка для картинок девайс/watch.svg" alt="Умные часы">
               </div>
-              <p class="main-goods-item-name">Умные часы</p>
+              <p class="goods-item-name">Умные часы</p>
             </a>
           </li>
           <li class="main-goods-item">
             <a class="main-goods-item-link" href="#">
-              <div class="main-goods-item-wrap-copter">
-                <img class="main-goods-item-img" src="" alt="Квадрокоптер">
+              <div class="main-goods-item-wrap">
+                <img class="main-goods-item-img" src="images/папка для картинок девайс/quadrocopter.svg" alt="Квадрокоптер">
               </div>
-              <p class="main-goods-item-name">Квадрокоптеры</p>
+              <p class="goods-item-name">Квадрокоптеры</p>
             </a>
           </li>
         </ul>
       </section>
 
-<section class="services">
-    <div class="container">
+<div class="index-columns">
+ <section class="services">
         <h2 class="visually-hidden">Сервис</h2>
         <ol class="slider-navigation">
             <li class="slider-navigation-item">
@@ -169,14 +176,18 @@
                 </button>
               </li>
         </ol>
-    </div>
     <div class="services-delivery-active-slider">
         <h3 class="delivery-active-slider">Доставка</h3>
-        <p class="slogan-delivery-text">Мы с удовольствием доставим ваш товар прямо
+        <p class="slogan-text">Мы с удовольствием доставим ваш товар прямо
             к вашему подъезду совершенно бесплатно! Ведь
             мы неплохо заработаем, поднимая его на ваш этаж.</p>
     </div>
-</section>
+    <div class="main-postman-item"></div>
+        <a class="main-postman-item-link">
+            <img class="main-postman-item-img" src="images/папка для картинок девайс/postman.svg" alt="Почтальон">
+        </a>
+ </section>
+</div>
 
 <div class="container delivery">
     <div class="slogan-delivery">
@@ -184,13 +195,13 @@
     </div>
       <div class="main-delivery-item"></div>
         <a class="main-delivery-item-link">
-            <img class="main-delivery-item-img" src="" alt="Грузовик">
+            <img class="main-delivery-item-img" src="images/папка для картинок девайс/truck.svg" alt="Грузовик">
         </a>
         </div>
       <section class="main-info-wrap">
         <h2 class="visually-hidden">Информация о "device"</h2>
         <article class="main-info">
-         <h3>О нас</h3>
+         <h2 class="contacts-title">О нас</h2>
            <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
            <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
          <ul class="main-info-delivery-list">
@@ -228,14 +239,16 @@
                  <button class="main-email-search-button" type="submit">Подписаться</button>
                </form>
              </nav>
-        </section>
-  </main>
+        </section>>
+    </main>
+
+
   <footer class="page-footer">
     <div class="container">
       <div class="page-footer-user-panel">
        <div class="page-footer-logo">
          <a>
-           <img src="" alt="device">
+           <img class="footer-logo" src="images/папка для картинок девайс/logo2.svg" alt="device">
          </a>
        </div>
       </div>
@@ -246,17 +259,19 @@
         </div>
         <div class="page-footer-menu">
           <h2 class="visually-hidden">Меню футера</h2>
-          <button class="footer-navigation-delivery" type="button">
-            <span class="footer-delivery">Доставка</span>
-          </button>
-          <button class="footer-navigation-warranty" type="button">
-            <span class="footer-warranty">Гарантия</span>
-          </button>
-          <button class="footer-navigation-contact" type="button">
-            <span class="footer-contact">Контакты</span>
-          </button>
+          <ul>
+          <li class="footer-navigation-item">
+            <a class="footer-navigation-link" href="delivery.html">Доставка</a>
+          </li>
+          <li class="footer-navigation-item">
+            <a class="footer-navigation-link" href="warranty.html">Гарантия</a>
+          </li>
+          <li class="footer-navigation-item">
+            <a class="footer-navigation-link" href="contact.html">Контакты</a>
+          </li>
+          </ul>
       </div>
-      <div class="page-footer-phone">
+      <div class="page-footer-phone-link">
         <a class="contacts-phone" href="tel:88005558628">+7(812) 812-12-12</a> 
       </div>
       <div class="page-footer-links">
