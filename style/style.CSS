@@ -1,0 +1,207 @@
+@font-face {
+  font-family: "rubik";
+  font-style: normal;
+  font-weight: 400;
+  src: url(".. /fonts/rubik/rubik-400.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "rubik";
+  font-style: normal;
+  font-weight: 700;
+  src: url(".. /fonts/rubik/rubik-700.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "rubik";
+  font-style: normal;
+  font-weight: 800;
+  src: url(".. /fonts/rubik/rubik-800.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "raleway";
+  font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/raleway/raleway-800.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  font-family:"rubik", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  color: #444444;
+  background-color: white;
+}
+
+.page-header {
+  color: white;
+  background-color: #FFE17F;
+}
+.navigation-button-name {
+  font-family: "rubik", sans-serif;
+  color: black;
+  font-weight: 400;
+}
+.navigation-link {
+  font-family: "raleway", sans-serif;
+  color: black;
+  font-weight: 800;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.main-goods-item-wrap {
+  width: 160px;
+    height: 160px;
+    background-color: #FFE17F;
+}
+.promo-heading {
+  font-family: "raleway", sans-serif;
+  font-size: 50px;
+  line-height: 50px;
+  font-weight: 800;
+  color: black;
+  background-color: white;
+}
+.characteristic-title {
+  font-family: "raleway", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: black;
+  background-color: white;
+}
+.characteristic-name{
+  font-family: "rubik", sans-serif;
+  font-size: 36px;
+  line-height: 30px;
+  font-weight: 400;
+  color: black;
+  background-color: white;
+}
+.main-goods-item-link{
+  font-family: "raleway", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 800;
+  color: black;
+  background-color: white;
+  text-decoration: none;
+}
+.services-slider {
+  background-color: #F0F0F0;
+}
+.delivery-active-slider{
+  font-family: "raleway";
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+  color: black;
+}
+.slider-navigation-name {
+  font-family: "raleway";
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: black;
+  background-color: white;
+}
+
+.main-info-wrap{
+  background-color: white;
+}
+.contacts {
+  background-color: white;
+}
+.slogan-delivery-text{
+  font-family: "raleway";
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 23px;
+  color: black;
+  text-transform: uppercase;
+}
+.contacts-title {
+  font-family: "raleway", sans-serif;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+  color: black;
+  background-color: white;
+}
+.main-info-delivery-list {
+  font-family: "rubik", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  color: black;
+  background-color: white;
+}
+.button {
+  font-family: "raleway";
+  color: black;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.main-info-mailing-text {
+  font-family: "raleway", sans-serif;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+  color: black;
+  background-color: white;
+}
+.main-email-search-button{
+  font-family: "raleway";
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  color: black;
+  background-color: white;
+}
+.page-footer {
+  background-color: #444444;
+}
+.contacts-address{
+  font-family: "rubik", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: white
+}
+.footer-navigation-link {
+  font-family: "raleway";
+  color: white;
+  font-weight: 800;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.contacts-phone{
+  font-family: "rubik", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: white;
+  text-decoration: none;
+}
+.page-footer-social-link{
+  font-family: "rubik", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: white;
+  text-decoration: none;
+}
+.page-footer-logo img{
+  font-family: "rubik", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: white;
+  text-decoration: none;
+}
